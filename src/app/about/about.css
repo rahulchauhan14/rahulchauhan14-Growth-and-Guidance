@@ -1,0 +1,87 @@
+.page-header {
+  padding: 80px 0 60px;
+}
+
+.page-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text-content p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.about-text-content h3 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.about-image-content {
+  position: relative;
+}
+
+.portrait {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+.experience-badge .years {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.mission-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-top: 4px solid var(--primary-color);
+}
+
+.mission-card h3 {
+  color: var(--primary-color);
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
